@@ -1,13 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iniciando proyecto final</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>iniciando proyecto final</title>
 </head>
+
 <body>
 
-  <h2>iniciando proyecto final</h2>
-    
+
+  <nav class="navbar navbar-expand-lg bg-warning p-3">
+    <div style="" class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <span class="text-primary fs-5 fw-bold">TOYS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li style="margin-left: 30px;" class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">inicio</a>
+          </li>
+
+          <li style="margin-left: 30px;" class="nav-item">
+            <a class="nav-link" href="#">productos</a>
+          </li>
+          <li style="margin-left: 30px;" class="nav-item">
+            <a class="nav-link" href="#">contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="imagenes/barbie2.jpg" class="d-block w-100" height="400px">
+        <div id="empresa" class="carousel-caption d-none d-md-block">
+          <h5>TOYS</h5>
+          <p>los mejores juguetes para el dia del niño.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="imagenes/maxresdefault.jpg" class="d-block w-100" height="400px">
+        <div id="empresa2" class="carousel-caption d-none d-md-block">
+          <h5></h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="imagenes/dbz.jpg" class="d-block w-100" height="400px">
+        <div id="empresa3" class="carousel-caption d-none d-md-block">
+          <h5></h5>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <style>
+    body {
+      background-color: rgba(12, 210, 144, 0.591);
+    }
+  </style>
+
+
+  <section class="w-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-2">Jugueteria TOYS</h1>
+    <p class="p-3 fs-4">En<span class="text-primary fw-bold"> TOYS</span> encontraras los mejores juguetes del mercado y
+      al mejor precio.</p>
+
+  </section>
+
+  <h2>Mas vendidos</h2>
+
+  <section class="container-fluid ">
+    <div class="row w-75 mx-auto mt-5 my-4 servicio-fila">
+      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
+        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
+          <p class="px-4">$12.000</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
+        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
+          <p class="px-4">$12.000</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
+        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
+          <p class="px-4">$12.000</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
+        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
+          <p class="px-4">$12.000</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
+        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
+          <p class="px-4">$12.000</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
+        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
+          <p class="px-4">$12.000</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
+        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
+          <p class="px-4">$12.000</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
+        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
+          <p class="px-4">$12.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+
+
+
+
 </body>
+
 </html>

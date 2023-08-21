@@ -1,3 +1,40 @@
-body{
-    background-color: white;
+
+
+#empresa h5{
+    color: darkmagenta;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+#empresa p{
+    color:darkmagenta;
+     font-size: 25px;
+     font-family: fantasy;
+}
+h2{
+    margin-left: 0.5cm;
+    
+}
+
+#decripcion p{
+    color: black;
+}
+
+
+@media (max-width:768px){
+    #intro{
+        width: 80% !important;
+    }
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
 }
