@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body{
+    padding-top: 200px;
+}
+
+.card{
+    width: 100%;
+
+}
+
+#boton3{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 1;
+}
+
+
+#titulo3{
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 50px;
+    margin-left: 1cm;
+}
+#titulo4{
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 50px;
+    margin-left: 1cm;
+}
+#navbar a:hover{
+    transform: scale(1.1);
+    color: green;
+}
+
+
+li{
+    font-size: 20px;
+}
+
+
+#auto2{
+ width: 300px;
+}
+

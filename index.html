@@ -7,14 +7,16 @@
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>iniciando proyecto final</title>
+
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-expand-lg bg-warning p-3">
-    <div style="" class="container-fluid">
+  <nav class="navbar navbar-expand-lg fixed-top bg-warning p-3">
+    <div class="container-fluid" id="navbar">
       <a class="navbar-brand" href="#">
         <span class="text-primary fs-5 fw-bold">TOYS</span>
       </a>
@@ -27,9 +29,19 @@
           <li style="margin-left: 30px;" class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">inicio</a>
           </li>
-
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu bg-warning border-5">
+              <li><a class="dropdown-item bg-warning" href="#">Autos</a></li>
+              <li><a class="dropdown-item bg-warning" href="#">Deportes</a></li>
+              <li><a class="dropdown-item bg-warning" href="#">De mesa</a></li>
+              <li><a class="dropdown-item bg-warning" href="#">Verano</a></li>
+            </ul>
+          </li>
           <li style="margin-left: 30px;" class="nav-item">
-            <a class="nav-link" href="#">productos</a>
+            <a class="nav-link" href="#">informacion</a>
           </li>
           <li style="margin-left: 30px;" class="nav-item">
             <a class="nav-link" href="#">contacto</a>
@@ -42,7 +54,8 @@
     </div>
   </nav>
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="inicio">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -53,21 +66,17 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="3000">
-        <img src="imagenes/barbie2.jpg" class="d-block w-100" height="400px">
-        <div id="empresa" class="carousel-caption d-none d-md-block">
-          <h5>TOYS</h5>
-          <p>los mejores juguetes para el dia del niño.</p>
-        </div>
+        <img src="imagenes/legominecraft2.jpg" class="d-block w-100" height="550px">
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="imagenes/maxresdefault.jpg" class="d-block w-100" height="400px">
+        <img src="imagenes/maxresdefault.jpg" class="d-block w-100" height="550px">
         <div id="empresa2" class="carousel-caption d-none d-md-block">
           <h5></h5>
           <p></p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="imagenes/dbz.jpg" class="d-block w-100" height="400px">
+        <img src="imagenes/dbz.jpg" class="d-block w-100" height="550px">
         <div id="empresa3" class="carousel-caption d-none d-md-block">
           <h5></h5>
           <p></p>
@@ -86,7 +95,7 @@
 
   <style>
     body {
-      background-color: rgba(12, 210, 144, 0.591);
+      background-color: white;
     }
   </style>
 
@@ -97,75 +106,157 @@
       al mejor precio.</p>
 
   </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 class="fw-bold text-warning">MÁS VENDIDOS</h2>
 
-  <h2>Mas vendidos</h2>
+  <section class="container-fluid text-center" id="cuerpo">
 
-  <section class="container-fluid ">
     <div class="row w-75 mx-auto mt-5 my-4 servicio-fila">
-      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
-        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
-          <p class="px-4">$12.000</p>
+      <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
+        <img src="imagenes/ajedrez.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
+        <div class="info">
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2" id="texto1">Ajedrez juego de mesa</h3>
+          <p class="px-4">$3.900</p>
         </div>
+        <a class="btn btn-warning" href="ajedrez.html" role="button">Ver más</a>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
-        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
-          <p class="px-4">$12.000</p>
+      <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
+        <img src="imagenes/auto.jpg " class="img-fluid" alt="desarrollo" width="200" height="180">
+        <div class="info">
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Auto Fast Whel-x10 Unid.</h3>
+          <p class="px-4">$3.200</p>
         </div>
+        <a class="btn btn-warning" href="auto.html" role="button">Ver más</a>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
-        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
-          <p class="px-4">$12.000</p>
+      <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
+        <img src="imagenes/simpson1.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
+        <div class="info">
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Juego en caja los Simpson</h3>
+          <p class="px-4">$5.100</p>
         </div>
+        <a class="btn btn-warning" href="simpson.html" role="button">Ver más</a>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
-        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
-          <p class="px-4">$12.000</p>
+      <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
+        <img src="imagenes/uno21.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
+        <div class="info">
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Cartas El Uno-x50</h3>
+          <p class="px-4">$1.000</p>
         </div>
+        <a class="btn btn-warning" href="carta1.html" role="button" id="boton">Ver más</a>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
-        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
-          <p class="px-4">$12.000</p>
+      <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
+        <img src="imagenes/mario2.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
+        <div class="info">
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Personajes Mario Bross</h3>
+          <p class="px-4">$4.300</p>
         </div>
+        <a class="btn btn-warning" href="#" role="button">Ver más</a>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
-        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
-          <p class="px-4">$12.000</p>
+      <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
+        <img src="imagenes/lego50.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
+        <div class="info">
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Super avion Lego</h3>
+          <p class="px-4">$8.500</p>
         </div>
+        <a class="btn btn-warning" href="#" role="button" id="boton">Ver más</a>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
-        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
-          <p class="px-4">$12.000</p>
+      <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
+        <img src="imagenes/metegol2.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
+        <div class="info">
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Metegol</h3>
+          <p class="px-4">$15.800</p>
         </div>
+        <a class="btn btn-warning" href="#" role="button">Ver más</a>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 justify-content-start my-5 icono-wrap">
-        <img src="imagenes/ajedrez.jpg" alt="desarrollo" width="180" height="160">
-        <div>
-          <h3 class="fs-5 mt-4 px-4 pb-1">Ajedrez</h3>
-          <p class="px-4">$12.000</p>
+      <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
+        <img src="imagenes/pistolita5.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
+        <div class="info">
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Pistolita de Agua</h3>
+          <p class="px-4">$3.000</p>
         </div>
+        <a class="btn btn-warning" href="#" role="button">Ver más</a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
+        <img src="imagenes/monopoly2.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
+        <div class="info">
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Monopoly</h3>
+          <p class="px-4">$7.000</p>
+        </div>
+        <a class="btn btn-warning" href="#" role="button">Ver más</a>
       </div>
     </div>
   </section>
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="conteiner text-center text-md-start">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Nosotros</h5>
+          <hr class="mb-4">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quos velit vitae? Ex rerum temporibus
+            reprehenderit, enim corrupti sed ipsa! Optio magnam numquam dolores neque deserunt saepe inventore accusamus
+            veritatis.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="links">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Reclamos</h5>
+          <hr class="mb-4">
+          <p>
+            <a href="reclamo.html" class="text-light">Tu cuenta</a>
+          </p>
+          <p>
+            <a href="#" class="text-light">Tu ordenes</a>
+          </p>
+          <p>
+            <a href="#" class="text-light">Manejo de cuenta</a>
+          </p>
+          <p>
+            <a href="#" class="text-light">ayuda</a>
+          </p>
+        </div>
 
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="contenido1">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contactos</h5>
+          <hr class="mb-4">
+          <p>
+            <li class="fas fa-home me-3">Argentina, Cordoba 4845</li>
+          </p>
+          <p>
+            <li class="fas fa-envelope me-3">toys@gmail.com</li>
+          </p>
+          <p>
+            <li class="fas fa-phone me-3">351-000004</li>
+          </p>
+        </div>
+        <hr class="mb-4">
+        <div class="text-center mb-2">
+          <p>Copyright Toys - 2023. Todos los derechos reservados.
+          </p>
+        </div>
+        <div class="text-center">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-light"><i class="fab fa-google-plus"></i></a>
+            <li class="list-inline-item">
+              <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-light"><i class="fab fa-whatsapp"></i></a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-
-
-
-
+    </div>
+  </footer>
 
 
 
@@ -179,6 +270,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
 
 
 

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpson</title>
+    <link rel="stylesheet" href="/css/compras.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-warning p-3">
+        <div class="container-fluid" id="navbar">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fs-5 fw-bold">TOYS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li style="margin-left: 30px;" class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu bg-warning border-5">
+                            <li><a class="dropdown-item bg-warning" href="#">Autos</a></li>
+                            <li><a class="dropdown-item bg-warning" href="#">Deportes</a></li>
+                            <li><a class="dropdown-item bg-warning" href="#">De mesa</a></li>
+                            <li><a class="dropdown-item bg-warning" href="#">Verano</a></li>
+                        </ul>
+                    </li>
+                    <li style="margin-left: 30px;" class="nav-item">
+                        <a class="nav-link" href="#">informacion</a>
+                    </li>
+                    <li style="margin-left: 30px;" class="nav-item">
+                        <a class="nav-link" href="#">contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="card mb-3 border-warning border-0">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img id="ajedrez1" src="imagenes/simpson3.webp" class="img-fluid rounded-start"
+                    style="margin-left: 30px;" width="420px">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Ajedrez</h5>
+                    <p class="card-text">Este es un uno de los mejores juegos de mesa, donde tentras que usar la
+                        estrategia para
+                        ganar. se te asegura horas de entreteniminto.</p>
+                    <h2>$1.200</h2>
+                    <a class="btn btn-primary" href="#" role="button">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="titulo4" class="fw-bold text-warning">PRODUCTOS SIMILARES</h2>
+    
+    <br>
+
+    <div id="carouselExample" class="carousel slide m-3">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 border-warning border-2">
+                            <img src="imagenes/vengadores.webp" class="card-img-top" alt="...">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="card-footer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This card has even longer content than the first to show
+                                        that equal height
+                                        action.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-warning border-2">
+                            <img src="imagenes/toystore.webp" class="card-img-top" alt="...">
+                            <div class="card-footer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This card has even longer content than the first to show
+                                        that equal height
+                                        action.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-warning border-2">
+                            <img src="imagenes/blancanieves.webp" class="card-img-top" alt="...">
+                            <div class="card-footer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This card has even longer content than the first to show
+                                        that equal height
+                                        action.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 border-warning border-2">
+                            <img src="imagenes/frozen.webp" class="card-img-top" alt="..." height="400px">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="card-footer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional
+                                        content. This content is a little bit longer.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-warning border-2">
+                            <img src="imagenes/dragon.webp" class="card-img-top" alt="...">
+                            <br>
+                            <br>
+                            <div class="card-footer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-warning border-2">
+                            <img src="imagenes/naruto.webp" class="card-img-top" alt="...">
+                            <div class="card-footer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional
+                                        content. This card has even longer content than the first to show that equal
+                                        height action.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon btn btn-primary" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon btn btn-primary" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="conteiner text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Nosotros</h5>
+                    <hr class="mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quos velit vitae? Ex rerum
+                        temporibus
+                        reprehenderit, enim corrupti sed ipsa! Optio magnam numquam dolores neque deserunt saepe
+                        inventore accusamus
+                        veritatis.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="links">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Reclamos</h5>
+                    <hr class="mb-4">
+                    <p>
+                        <a href="reclamo.html" class="text-light">Tu cuenta</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-light">Tu ordenes</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-light">Manejo de cuenta</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-light">ayuda</a>
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="contenido1">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contactos</h5>
+                    <hr class="mb-4">
+                    <p>
+                        <li class="fas fa-home me-3">Argentina, Cordoba 4845</li>
+                    </p>
+                    <p>
+                        <li class="fas fa-envelope me-3">toys@gmail.com</li>
+                    </p>
+                    <p>
+                        <li class="fas fa-phone me-3">351-000004</li>
+                    </p>
+                </div>
+                <hr class="mb-4">
+                <div class="text-center mb-2">
+                    <p>Copyright Toys - 2023. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light"><i class="fab fa-google-plus"></i></a>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light"><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
