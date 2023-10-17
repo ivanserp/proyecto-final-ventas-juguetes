@@ -91,15 +91,6 @@ h2 {
     
 }
 
-#productos a{
-    border: 1px solid #c76c4b; 
-    background-color: #fff;
-    width: 80%;
-    text-align: center;
-    color: #c76c4b;
-    font-size: 14px;
-    font-weight: 500;
-  }
 
 #links a{
     text-decoration: none;
