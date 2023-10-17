@@ -30,12 +30,20 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li style="margin-left: 30px;" class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
                     </li>
-
-                    <li style="margin-left: 30px;" class="nav-item">
-                        <a class="nav-link" href="#">productos</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Productos
+                      </a>
+                      <ul class="dropdown-menu bg-warning border-5">
+                          <li><a class="dropdown-item bg-warning" href="#">Autos</a></li>
+                          <li><a class="dropdown-item bg-warning" href="#">Deportes</a></li>
+                          <li><a class="dropdown-item bg-warning" href="#">De mesa</a></li>
+                          <li><a class="dropdown-item bg-warning" href="#">Verano</a></li>
+                      </ul>
+                  </li>
                     <li style="margin-left: 30px;" class="nav-item">
                         <a class="nav-link" href="#">informacion</a>
                     </li>
@@ -52,7 +60,7 @@
 
     <h2 id="titulor">cuentanos en que podemos ayudarte</h2>
     <div class="formulario">
-        <form action="">
+        <form action="https://formsubmit.co//ivanp4668@gmail.com" method="post" >
             <br>
 
             <label for="Nombre">Nombre:<input type="text" name="Nombre"></label>
@@ -66,7 +74,7 @@
             <label for=""><textarea name="Reclamos" id="pepe1" cols="20" rows="2"
                     placeholder="Escribe tu reclamo"></textarea></label>
              <br>       
-            <label for="Enviar"><input type="submit" id="boton"></label>
+            <label for="Enviar"><input type="submit" id="botonn"></label>
 
         </form>
     </div>
@@ -82,25 +90,14 @@
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Nosotros</h5>
               <hr class="mb-4">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quos velit vitae? Ex rerum temporibus
-                reprehenderit, enim corrupti sed ipsa! Optio magnam numquam dolores neque deserunt saepe inventore accusamus
-                veritatis.</p>
+              <p>TOYS es una empresa de experiencia familiar que crea momentos lúdicos y significativos. Nacimos en 2010 con nuestra primera sucursal en la ciudad de Córdoba y llevamos nuestros productos a todo el país a través de nuestras plataformas digitales.</p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="links">
               <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Reclamos</h5>
               <hr class="mb-4">
               <p>
-                <a href="reclamo.html" class="text-light">Tu cuenta</a>
-              </p>
-              <p>
-                <a href="#" class="text-light">Tu ordenes</a>
-              </p>
-              <p>
-                <a href="#" class="text-light">Manejo de cuenta</a>
-              </p>
-              <p>
-                <a href="#" class="text-light">ayuda</a>
-              </p>
+                <a href="reclamo.html" class="text-light" id="reclamo2">Cuéntanos tu Reclamo</a>
+            </p>
             </div>
     
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="contenido1">
@@ -113,7 +110,7 @@
                 <li class="fas fa-envelope me-3">toys@gmail.com</li>
               </p>
               <p>
-                <li class="fas fa-phone me-3">351-000004</li>
+                <li class="fas fa-phone me-3">3525-646386</li>
               </p>
             </div>
             <hr class="mb-4">

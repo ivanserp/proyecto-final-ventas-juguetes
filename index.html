@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>iniciando proyecto final</title>
 
 </head>
@@ -27,24 +29,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li style="margin-left: 30px;" class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Productos
-            </a>
-            <ul class="dropdown-menu bg-warning border-5">
-              <li><a class="dropdown-item bg-warning" href="#">Autos</a></li>
-              <li><a class="dropdown-item bg-warning" href="#">Deportes</a></li>
-              <li><a class="dropdown-item bg-warning" href="#">De mesa</a></li>
-              <li><a class="dropdown-item bg-warning" href="#">Verano</a></li>
-            </ul>
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li style="margin-left: 30px;" class="nav-item">
-            <a class="nav-link" href="#">informacion</a>
+            <a class="nav-link" href="#pie1">Información</a>
           </li>
           <li style="margin-left: 30px;" class="nav-item">
-            <a class="nav-link" href="#">contacto</a>
+            <a class="nav-link" href="#pie1">Contacto</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true"></a>
@@ -84,18 +75,18 @@
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon bg-warning" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 
   <style>
     body {
-      background-color: white;
+      background-color: #fcf8f3;
     }
   </style>
 
@@ -110,7 +101,7 @@
   <br>
   <br>
   <br>
-  <h2 class="fw-bold text-warning">MÁS VENDIDOS</h2>
+  <h2 class="fw-bold text-warning">MÁS POPULARES</h2>
 
   <section class="container-fluid text-center" id="cuerpo">
 
@@ -121,7 +112,7 @@
           <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2" id="texto1">Ajedrez juego de mesa</h3>
           <p class="px-4">$3.900</p>
         </div>
-        <a class="btn btn-warning" href="ajedrez.html" role="button">Ver más</a>
+        <a class="btn" href="ajedrez.html" role="button">Ver más</a>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
         <img src="imagenes/auto.jpg " class="img-fluid" alt="desarrollo" width="200" height="180">
@@ -150,10 +141,11 @@
       <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
         <img src="imagenes/mario2.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
         <div class="info">
-          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Personajes Mario Bross</h3>
+          <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Super Mario Bross</h3>
           <p class="px-4">$4.300</p>
         </div>
-        <a class="btn btn-warning" href="#" role="button">Ver más</a>
+        <br>
+        <a class="btn btn-warning" href="mario.html" role="button">Ver más</a>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
         <img src="imagenes/lego50.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
@@ -161,7 +153,7 @@
           <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Super avion Lego</h3>
           <p class="px-4">$8.500</p>
         </div>
-        <a class="btn btn-warning" href="#" role="button" id="boton">Ver más</a>
+        <a class="btn btn-warning" href="avionlego.html" role="button" id="boton">Ver más</a>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
         <img src="imagenes/metegol2.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
@@ -169,7 +161,7 @@
           <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Metegol</h3>
           <p class="px-4">$15.800</p>
         </div>
-        <a class="btn btn-warning" href="#" role="button">Ver más</a>
+        <a class="btn btn-warning" href="metegol.html" role="button">Ver más</a>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
         <img src="imagenes/pistolita5.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
@@ -177,7 +169,7 @@
           <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Pistolita de Agua</h3>
           <p class="px-4">$3.000</p>
         </div>
-        <a class="btn btn-warning" href="#" role="button">Ver más</a>
+        <a class="btn btn-warning" href="pistolita.html" role="button">Ver más</a>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-12 justify-content-start my-5 icono-wrap p-3" id="productos">
         <img src="imagenes/monopoly2.jpg" class="img-fluid" alt="desarrollo" width="200" height="180">
@@ -185,34 +177,25 @@
           <h3 class="fs-5 mt-4 px-4 pb-1 border-top border-2">Monopoly</h3>
           <p class="px-4">$7.000</p>
         </div>
-        <a class="btn btn-warning" href="#" role="button">Ver más</a>
+        <a class="btn btn-warning" href="monopoli.html" role="button">Ver más</a>
       </div>
     </div>
   </section>
-  <footer class="bg-dark text-light pt-5 pb-4">
+  <footer class="bg-dark text-light pt-5 pb-4" id="pie1">
     <div class="conteiner text-center text-md-start">
       <div class="row text-center text-md-start">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Nosotros</h5>
           <hr class="mb-4">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quos velit vitae? Ex rerum temporibus
-            reprehenderit, enim corrupti sed ipsa! Optio magnam numquam dolores neque deserunt saepe inventore accusamus
-            veritatis.</p>
+          <p>TOYS es una empresa de experiencia familiar que crea momentos lúdicos y significativos. Nacimos en 2010 con
+            nuestra primera sucursal en la ciudad de Córdoba y llevamos nuestros productos a todo el país a través de
+            nuestras plataformas digitales.</p>
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="links">
           <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Reclamos</h5>
           <hr class="mb-4">
           <p>
-            <a href="reclamo.html" class="text-light">Tu cuenta</a>
-          </p>
-          <p>
-            <a href="#" class="text-light">Tu ordenes</a>
-          </p>
-          <p>
-            <a href="#" class="text-light">Manejo de cuenta</a>
-          </p>
-          <p>
-            <a href="#" class="text-light">ayuda</a>
+            <a href="reclamo.html" class="text-light" id="reclamo2">Cuéntanos tu Reclamo</a>
           </p>
         </div>
 
@@ -220,18 +203,19 @@
           <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contactos</h5>
           <hr class="mb-4">
           <p>
-            <li class="fas fa-home me-3">Argentina, Cordoba 4845</li>
+            <li class="fas fa-home me-3">Argentina, Córdoba 4845</li>
           </p>
           <p>
             <li class="fas fa-envelope me-3">toys@gmail.com</li>
           </p>
           <p>
-            <li class="fas fa-phone me-3">351-000004</li>
+            <li class="fas fa-phone me-3">3525-646386</li>
           </p>
         </div>
         <hr class="mb-4">
         <div class="text-center mb-2">
-          <p>Copyright Toys - 2023. Todos los derechos reservados.
+          <p>Copyright Toys - 2023. Todos los derechos reservados. <br>
+            Perez Alejandro Ivan
           </p>
         </div>
         <div class="text-center">
