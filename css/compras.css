@@ -88,3 +88,11 @@ footer a{
     transform: scale(1.1);
     
 }
+
+.card{
+    text-align: center;
+}
+
+#ajedrez1{
+    max-width: 400px;
+}
